@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background color */
+    color: white; /* Text color */
+}
+
+h1 {
+    color: #3498db; /* Heading color */
+}
+
+a {
+    color: #3498db; /* Link color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}

@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+    background-color: #121212;
+    flex-direction: column;
+    color: white;
+    background-size: cover;
+}
+.title {
+    height: 10%;
+    width: 100%;
+    background-color: #004200;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0; 
+}
+
+.title h1 {
+	padding:20px;
+    font-size: 25px;
+    color: white;
+}
+
+
+.home {
+	position:relative;
+	left:830px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.register {
+	padding-left:850px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.title a:hover {
+    color: #ffcc00; /* Change the color when hovered */
+}
+
+form {
+    padding: 20px;
+    background-color:#141414;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+
+    backdrop-filter: blur(10px);
+    max-width: 500px;
+    width: 100%;
+    color: white;	
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.avatar {
+    width: 100px; /* Adjust the width of the avatar image */
+    height: 100px; /* Adjust the height of the avatar image */
+    border-radius: 50%;
+}
+
+.container {
+    text-align: center;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

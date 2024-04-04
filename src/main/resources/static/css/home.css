@@ -1,0 +1,79 @@
+body {
+	background-color:black;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.container {
+	
+	margin-top:10px;
+	width:250px;
+	height:250px;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+/* Style the heading */
+h1 {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Style the register links */
+.register a {
+    text-decoration: none;
+    font-size:20px;
+    color: #008000;
+    font-weight: bold;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* Style the bar container */
+.bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 200px;
+    margin-top: 20px;
+}
+
+/* Style the bars */
+.bar {
+    width: 20px;
+    height: 50px;
+    background-color: #008000;
+    margin: 0 5px;
+    animation: moveUpDown 1s infinite alternate;
+}
+
+.bar:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.bar:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.bar:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.bar:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes moveUpDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-50px);
+    }
+}

@@ -1,0 +1,73 @@
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	background-color: #004200;
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 10px;
+}
+
+h1 {
+	color: white;
+	text-align: left;
+	font-style: inherit;
+	margin: 0;
+}
+
+a.home {
+	display: inline-block;
+	padding: 12px 25px;
+	background-color: #000;
+	color: #fff;
+	font-size:13px;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+.success-message {
+    padding-top: 20px; /* Adjust the value as needed */
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    font-size: 24px; /* Adjust the font size */
+    font-weight: bold; /* Add bold font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for a stylish effect */
+}
+
+
+keyframes fadeIn {from { opacity:0;
+	
+}
+
+to {
+	opacity: 1;
+}
+
+}
+form {
+	text-align: center;
+	margin-top: 20px;
+}
+
+button {
+	background-color: #3498db;
+	color: #fff;
+	padding: 8px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #2980b9;
+}

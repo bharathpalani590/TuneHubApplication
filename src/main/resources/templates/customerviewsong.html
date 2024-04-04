@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="login.css" th:href="@{/css/customerviewsong.css}">
+<title>Insert title here</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Melomates Music</h1>
+        <a href="/logout" class="home">Logout</a>
+    </div>
+   <h1>Hello Customer</h1>
+   
+   <table border="1">
+		<tr>
+		    <td> ID </td>
+			<td>Song Name</td>
+			<td>Song Artist</td>
+			<td>SongGenre</td>
+			<td>SongLink</td>
+		</tr>
+
+		<tr th:each="song : ${song}">
+		    <td th:text="${song.id}"></td>
+			<td th:text="${song.songname}"></td>
+			<td th:text="${song.songartist}"></td>
+			<td th:text="${song.songgenre}"></td>
+			<td>
+			<audio controls>
+            <source th:src=${song.songlink} type="audio/mp3">
+            </audio>
+            </td>
+		
+		</tr>
+		
+	</table>
+</body>
+</html>

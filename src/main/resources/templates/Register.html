@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" th:href="@{/css/register.css}">
+</head>
+<body>
+       <div class="title">
+           <h1>Melomates Music</h1>
+           <a href="/home">Home</a>
+       </div>    
+	<div class="forms"> 
+    <form action="/register" method="post" class="registration-form">
+        <table>
+            <tr>
+                <td colspan="2"><h2><center>Create Account</center></h2></td>
+            </tr>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" name="username" id="username" placeholder="enter your name" autocomplete="off" required /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" name="mail" id="email" placeholder="enter your Email" required /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="text" name="password" id="password" placeholder="enter your Password" required /></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="others" required> Others
+                </td>
+            </tr>
+            <tr>
+                <td><label>Role:</label></td>
+                <td>
+                    <input type="radio" name="role" value="admin"> Admin
+                    <input type="radio" name="role" value="user"> User
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea name="Address" id="address" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>

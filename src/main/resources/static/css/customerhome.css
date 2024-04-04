@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    background-color: #004200;
+    text-align: right;
+    padding: 5px;
+}
+
+.title h1 {
+	position:relative;
+    margin-left: 10px;
+    top:10px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.title a {
+    padding: 10px 10px;
+    color: #fff;
+    background-color: #408080; /* Red color */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position:relative;
+    right:20px;
+    top:-22px;
+    
+    text-decoration: none;
+}
+
+.home:hover {
+    background-color: #ffffff; /* Darker red on hover */
+    color: #000000;
+}
+
+.container {
+    text-align: center;
+    font-size: large;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+h1 {
+    color: white;
+}
+
+/* ... (other styles remain unchanged) */
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+}
+
+.animated-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-link:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: scale(1.05);
+}
